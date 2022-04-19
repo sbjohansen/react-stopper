@@ -1,0 +1,13 @@
+@import '../../styles/settings.scss';
+
+.timer {
+display: flex;
+justify-content: center;
+font-size: $base-size * 5;
+}
+
+.buttons {
+  margin-top: $base-size;
+  display: flex;
+  justify-content: center;
+}
