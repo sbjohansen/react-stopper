@@ -1,24 +1,12 @@
 import Controls from '../Controls/Controls'
-
 import styles from './Timer.module.scss'
 import { useState } from 'react'
-import { useEffect } from 'react'
-
-
-
-
 
 const Timer = () => {
-
-  
-
 
   const [timer, setTimer] = useState(setInterval(() => {}, 1000));
 
   const [time, setTime] = useState(0);
-
-  //let milliseconds = time.getMilliseconds()
-
 
   let milliseconds = String(time).slice(-3).padStart(3, "0");
   let seconds = String(Math.floor(time / 1000)).padStart(2, "0");
